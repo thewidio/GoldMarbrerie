@@ -5,6 +5,8 @@ from dash import html
 from sqlalchemy import create_engine
 import pandas as pd
 import plotly.express as px
+import os
+
 
 # Paramètres de connexion à la base de données
 db_params = {
@@ -140,5 +142,8 @@ def update_kpis(selected_month, selected_year):
 # Run the app
 if __name__ == '__main__':
     app.run_server(debug=False)
-
+    # Get the PORT from the environment variable (if not found, default to 8050)
+    port = int(os.environ.get('PORT', 8050))
+    # Run the server on all available interfaces and the port specified by Render
+    app.run_server(host='0.0.0.0', port=port)
 
