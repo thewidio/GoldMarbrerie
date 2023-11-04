@@ -15,11 +15,23 @@ db_params = {
     'port': 5432
 }
 
+"""
+# ICI LE CODE POUR SE CONNECTER A LA BASE DE DONEES
 # Créer une connexion à la base de données
 engine = create_engine(f'postgresql://{db_params["user"]}:{db_params["password"]}@{db_params["host"]}:{db_params["port"]}/{db_params["dbname"]}')
 
 # Lire les données de la table 'invoices' dans un DataFrame
 df = pd.read_sql('SELECT * FROM invoices', engine)
+df['date'] = pd.to_datetime(df['date'], errors='coerce')  # 'coerce' will set invalid parsing as NaT
+print(df.head())
+"""
+
+
+# Chemin vers le fichier CSV
+csv_file_path = '/Users/wilde.diogene/Documents/My_Projects/Perso/GoldMarbrerieReporting/data/processed/2022/Invoices_2022.csv'
+
+# Lire les données du fichier CSV dans un DataFrame
+df = pd.read_csv(csv_file_path)
 df['date'] = pd.to_datetime(df['date'], errors='coerce')  # 'coerce' will set invalid parsing as NaT
 print(df.head())
 
