@@ -28,7 +28,7 @@ print(df.head())
 
 
 # Chemin vers le fichier CSV
-csv_file_path = '/Users/wilde.diogene/Documents/My_Projects/Perso/GoldMarbrerieReporting/data/processed/2022/Invoices_2022.csv'
+csv_file_path = 'data/processed/2022/Invoices_2022.csv'
 
 # Lire les données du fichier CSV dans un DataFrame
 df = pd.read_csv(csv_file_path)
