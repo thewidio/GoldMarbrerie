@@ -1,0 +1,146 @@
+/* Style général pour la page */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+
+
+
+
+body {
+    background-color: rgb(248, 245, 243); /* Couleur claire pour le fond */
+    color: rgb(20, 21, 36); /* Couleur sombre pour le texte */
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* Styles d'en-tête */
+  h1 {
+    background-color: rgb(20, 21, 36); /* Couleur foncé pour le fond */
+    padding: 30px;
+    color: rgb(236,192,117); /* Couleur sombre pour un en-tête important */
+    font-size: 32px; /* Taille de police pour h1 */
+    font-family: 'Playfair Display';
+    
+  }
+  
+  h2 {
+    color: rgb(206, 200, 199); /* Couleur intermédiaire pour h2 */
+    font-size: 1.5em; /* Taille de police pour h2 */
+  }
+  
+  h3 {
+    color: rgb(244, 240, 236); /* Autre couleur claire pour h3 */
+    font-size: 1.17em; /* Taille de police pour h3 */
+  }
+  
+  /* Style de paragraphe */
+  p {
+    color: rgb(20, 21, 36); /* Couleur sombre pour le texte des paragraphes */
+    font-size: 1em; /* Taille de police standard pour les paragraphes */
+  }
+  
+  /* Style de bouton basique */
+  button {
+    background-color: rgb(206, 200, 199); /* Couleur intermédiaire pour le fond du bouton */
+    color: white; /* Texte du bouton en blanc pour le contraste */
+    padding: 10px 20px; /* Espacement intérieur pour le bouton */
+    border: none; /* Pas de bordure pour un look moderne */
+    border-radius: 5px; /* Bordures arrondies pour le bouton */
+    font-size: 1em; /* Taille de police pour le texte du bouton */
+    cursor: pointer; /* Curseur en forme de pointeur au survol du bouton */
+  }
+  
+  /* Style de bouton au survol */
+  button:hover {
+    background-color: rgb(244, 240, 236); /* Couleur plus claire au survol */
+  }
+/* Style général pour les étiquettes des sélecteurs déroulants */
+.custom-dropdown label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+  } 
+    
+  /* Style pour tous les dropdowns avec la classe 'custom-dropdown' */
+.custom-dropdown {
+    /* Vos styles ici. Par exemple: */
+    background-color: rgb(244, 240, 236); /* Couleur foncé pour le fond */
+    width: 100%; /* Fait en sorte que le dropdown remplisse son conteneur */
+    min-height: 36px; /* Hauteur minimale pour le dropdown */
+    border: 1px solid rgb(244, 240, 236); /* Bordure grise pour le dropdown */
+    border-radius: 4px; /* Bordures arrondies pour le dropdown */
+    padding: 0.5em 0.5em; /* Espacement intérieur pour le texte du dropdown */
+  }
+  
+/* Style pour l'option sélectionnée */
+.custom-dropdown .Select-value {
+    font-weight: bold;
+  }
+  
+  /* Style pour les options dans le menu déroulant */
+  .custom-dropdown .Select-menu-outer {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style pour les options au survol */
+  .custom-dropdown .Select-option.is-focused {
+    background-color: #f8f8f8;
+  }
+  
+  /* Style pour l'option sélectionnée dans le menu déroulant */
+  .custom-dropdown .Select-option.is-selected {
+    background-color: #e2e2e2;
+  }
+  
+  /* Style pour le conteneur de sélecteur de mois/année */
+  .custom-dropdown-container {
+    width: 48%;
+    display: inline-block;
+    margin-right: 4%; /* Si deux sélecteurs sont côte à côte, cela ajoute de l'espace entre eux */
+  }
+  
+  /* Assurez-vous que le dernier sélecteur n'a pas de marge à droite */
+  .custom-dropdown-container:last-child {
+    margin-right: 0;
+  }
+  .kpi-box {
+    background: #ffffff; /* Couleur de fond pour le KPI */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre portée pour le KPI */
+    padding: 20px; /* Padding à l'intérieur de la boîte */
+    border-radius: 10px; /* Bords arrondis pour la boîte */
+    margin: 10px; /* Marge autour de la boîte */
+    width: 300px; /* Largeur de la boîte */
+    height: auto; /* Hauteur automatique en fonction du contenu */
+  }
+  
+  .kpi-title {
+    font-size: 15px; /* Taille de la police pour le titre */
+    text-align: left; /* Justification à droite pour le titre */
+    color: #121426; /* Couleur du texte pour le titre */
+    margin-bottom: 1rem; /* Espace après le titre */
+  }
+  
+  .kpi-value {
+    font-size: 30px; /* Taille de la police pour la valeur du KPI */
+    font-weight: bold; /* Police en gras pour la valeur */
+    color: #121426; /* Couleur de la valeur du KPI */
+    margin-bottom: 1.5rem; /* Espace après la valeur du KPI */
+  }
+  
+  .kpi-calculation {
+    font-size: 1.5rem; /* Taille de la police pour l'élément calculé */
+    text-align: right; /* Justification à droite pour l'élément calculé */
+    color: #121426; /* Couleur du texte pour l'élément calculé */
+    margin-bottom: 0.5rem; /* Espace après l'élément calculé */
+  }
+  
+  .kpi-description {
+    font-size: 11px; /* Taille de la police pour la description */
+    color: #777; /* Couleur du texte pour la description */
+    text-align: justify; /* Justification du texte de la description */
+  }
+  
+  
+  /* ... ajoutez d'autres styles spécifiques aux composants internes du Dropdown si nécessaire */
+  
+
